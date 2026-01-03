@@ -13,7 +13,7 @@ export default {
     assetModuleFilename: 'assets/[hash][ext][query]',
     clean: true,
   },
-  plugins: [ new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'index.html') }), ],
+  plugins: [ new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'index.html'), }), ],
   module: {
     rules: [
       {

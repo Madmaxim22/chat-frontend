@@ -4,9 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build:dev": "webpack --env mode=development",
-    "build:prod": "webpack --env mode=production",
-    "start": "webpack serve",
+    "build:dev": "webpack --config webpack.dev.js --mode development",
+    "build:prod": "webpack --config webpack.prod.js --mode production",
+    "start": "webpack serve --config webpack.dev.js",
     "lint": "eslint --fix"
   },
   "keywords": [],
